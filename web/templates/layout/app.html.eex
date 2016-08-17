@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Whitebox.io</title>
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/style.css") %>">
+  </head>
+
+  <body>
+    <div id='page'>
+      <header class="header">
+        <div id='letters' class='letters'>
+          <span class='light'>W</span>
+          <span class='light'>h</span>
+          <span class='light'>i</span>
+          <span class='light'>t</span>
+          <span class='light'>e</span>
+          <span class='light'>b</span>
+          <span class='light'>o</span>
+          <span class='light'>x</span>
+          <span class='light'>.</span>
+          <span class='light'>i</span>
+          <span class='light'>o</span>
+          <!--<div class='descr white_font'>
+            Smart software.
+          </div>
+          -->
+        </div>
+        <div class='links-holder'>
+          <div class='left-bottom-corner white_font'>
+            <div class="corner"></div>
+          </div>
+          <nav role="navigation">
+            <ul class="links fadeable">
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#technologies">Technologies</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contacts">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="clear_both"></div>
+        </div>
+      </header>
+
+      <main role="main">
+        <%= render @view_module, @view_template, assigns %>
+      </main>
+
+      <footer role="footer" class='fadeable'>
+        © Whitebox.io, <%= DateTime.utc_now |> Map.get(:year) %>
+        <div class='right-bottom-corner'>
+          <div class="corner"></div>
+        </div>
+      </footer>
+
+    </div> <!-- /page -->
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  </body>
+</html>

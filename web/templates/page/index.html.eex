@@ -1,0 +1,80 @@
+<div id="about" class="white_font content first">
+  <h2>• About us</h2>
+  <div class="content-box fadeable">
+    <p class="first">
+      We are a software company created by technological enthusiasts with wide software development and architecturing background.
+    </p>
+    <p>
+      We best found ourselves in development complicated software solutions primarily based on client-server architecture but not only. We are strongly experienced in development of web applications, mobile solutions, asynchronous serverside solutions and highloaded services.
+    </p>
+  </div>
+</div>
+
+<div id="services" class="white_font content">
+  <h2>• Services</h2>
+  <div class="content-box fadeable">
+    <ul>
+      <li>Software architecture</li>
+      <li>Software development</li>
+      <li>Database design</li>
+      <li>Web development</li>
+    </ul>
+    <ul>
+      <li>Mobile development</li>
+      <li>Consulting</li>
+      <li>Coaching</li>
+    </ul>
+    <div class="clear_both"></div>
+  </div>
+</div>
+
+<div id="technologies" class="white_font content">
+  <h2>• Technologies</h2>
+  <div class="content-box fadeable">
+    <ul>
+      <li>Ruby, Ruby on Rails</li>
+      <li>Sinatra, Eventmachine</li>
+      <li>Objective C, Cocoa touch</li>
+      <li>Erlang</li>
+    </ul>
+    <ul>
+      <li>HTML5, CSS3</li>
+      <li>Java, Processing</li>
+      <li>WebRTC</li>
+      <li>Ember.js</li>
+    </ul>
+    <ul>
+      <li>Javascript, SVG</li>
+      <li>Meteor.js</li>
+    </ul>
+    <div class="clear_both"></div>
+  </div>
+</div>
+
+<div id="projects" class="white_font content">
+  <h2>• Projects</h2>
+  <div class="content-box fadeable projects">
+    <div class='date'>01.2013–04.2013</div>
+    <div class='callme'>
+      <p>
+        <span>Call</span><span class='orange'>Me</span>
+      </p>
+      <p>
+        p<span class='orange'>2</span>p video conferences system.
+      </p>
+      <p>
+        Distributed video conferences system which could work even in closed private networks.
+      </p>
+      <p>
+        Control server is based on Erlang. It's so lightweight and faultless than it might be run even on pocket ARM-based computers like Raspberry Pi.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="contacts" class="white_font content">
+  <h2>• Contacts</h2>
+  <div class="content-box fadeable">
+    <a class='mail' href='mailto:info@whitebox.io'>✉ info@whitebox.io</a>
+  </div>
+</div>
