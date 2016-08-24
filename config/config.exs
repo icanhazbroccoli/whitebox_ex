@@ -10,7 +10,7 @@ config :whitebox, Whitebox.Endpoint,
   url: [host: "localhost"],
   root: Path.dirname(__DIR__),
   secret_key_base: "XQVPyky1Q9ampRMi/POCkD8Wt84x6Lysm+MosHq0Ue5lTOmxb/mpF+QjhsuQ7yEP",
-  render_errors: [accepts: ~w(html json)],
+  render_errors: [accepts: ~w(html)],
   pubsub: [name: Whitebox.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
