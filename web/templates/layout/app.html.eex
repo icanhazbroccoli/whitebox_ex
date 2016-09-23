@@ -52,7 +52,7 @@
         <%= render @view_module, @view_template, assigns %>
       </main>
 
-      <footer role="footer" class='fadeable'>
+      <footer role="footer" class='fadeable footer'>
         © Whitebox.io, <%= DateTime.utc_now |> Map.get(:year) %>
         <div class='right-bottom-corner'>
           <div class="corner"></div>

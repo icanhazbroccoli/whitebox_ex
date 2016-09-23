@@ -13,11 +13,22 @@ defmodule Whitebox.Router do
     plug :accepts, ["json"]
   end
 
+  pipeline :editor do
+    plug :put_layout, {Whitebox.LayoutView, :editor}
+  end
+
+
   scope "/", Whitebox do
     pipe_through :browser # Use the default browser stack
-
     get "/", PageController, :index
+    get "/p/:slug", PageController, :post
   end
+
+  scope "/edit", Whitebox do
+    pipe_through [:browser, :editor]
+    resources "/posts", PostController
+  end
+
 
   # Other scopes may use custom stacks.
   # scope "/api", Whitebox do

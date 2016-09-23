@@ -22,6 +22,7 @@ environment :prod do
   #set include_erts: true
   set include_erts: false
   set include_src: true
+  #set include_src: false
   set strip_debug_info: false
 end
 

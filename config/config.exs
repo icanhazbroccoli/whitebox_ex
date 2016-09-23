@@ -14,6 +14,8 @@ config :whitebox, Whitebox.Endpoint,
   pubsub: [name: Whitebox.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
+config :whitebox, ecto_repos: [Whitebox.Repo,]
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",

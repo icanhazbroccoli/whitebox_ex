@@ -24,8 +24,9 @@ defmodule Whitebox.ModelCase do
   end
 
   setup tags do
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Whitebox.Repo)
     unless tags[:async] do
-      Ecto.Adapters.SQL.restart_test_transaction(Whitebox.Repo, [])
+      Ecto.Adapters.SQL.Sandbox.mode(Whitebox.Repo, {:shared, self()})
     end
 
     :ok

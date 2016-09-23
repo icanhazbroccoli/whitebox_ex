@@ -9,3 +9,18 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+
+defmodule Mix.Tasks.Whitebox.Seed do
+  require Logger
+
+  def run(args) do
+    json_file= Enum.at(args, 0)
+    File.stream!(json_file)
+      |> CSV.decode(separator: ?,)
+      |> Enum.map(fn(row) ->
+      end)
+  end
+end
+
+
+# Mix.Tasks.Whitebox.Seed.run(System.argv)

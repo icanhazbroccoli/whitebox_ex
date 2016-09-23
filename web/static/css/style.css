@@ -24,11 +24,11 @@ body.white {
 .letters {
   whdth: 100%;
   position: relative;
-  height: 350px;
+  height: 170px;
   background-color: #7931b7;
-  padding-top: 200px;
-  font-size: 120px;
-  text-align: center;
+  padding-top: 30px;
+  padding-left: 300px;
+  font-size: 100px;
   font-weight: bold;
   line-height: 150px;
   -webkit-border-bottom-right-radius: 50px;
@@ -37,8 +37,8 @@ body.white {
   -webkit-border-top-left-radius: 50px;
   -moz-border-radius-topleft: 50px;
   border-top-left-radius: 50px;
-  background-image: url(/img/box.svg);
-  background-position: center 50px;
+  background-image: url(/images/box.svg);
+  background-position: 100px 40px;
   background-repeat: no-repeat;
   overflow: hidden;
 }

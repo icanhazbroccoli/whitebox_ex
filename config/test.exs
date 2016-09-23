@@ -12,8 +12,8 @@ config :logger, level: :warn
 # Configure your database
 config :whitebox, Whitebox.Repo,
   adapter: Ecto.Adapters.MySQL,
-  username: "root",
-  password: "",
+  username: "whitebox",
+  password: "whitebox",
   database: "whitebox_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

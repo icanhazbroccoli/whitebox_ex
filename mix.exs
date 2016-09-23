@@ -19,7 +19,7 @@ defmodule Whitebox.Mixfile do
   def application do
     [mod: {Whitebox, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :mariaex]]
+                    :phoenix_ecto, :mariaex, :scrivener_ecto]]
   end
 
   # Specifies which paths to compile per environment.
@@ -31,14 +31,18 @@ defmodule Whitebox.Mixfile do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:phoenix, "~> 1.1.1"},
-      {:phoenix_ecto, "~> 2.0"},
+      {:phoenix, "~> 1.2"},
+      {:phoenix_ecto, "~> 3.0"},
+      {:scrivener_ecto, "~> 1.0"},
       {:mariaex, ">= 0.0.0"},
       {:phoenix_html, "~> 2.3"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:gettext, "~> 0.9"},
       {:cowboy, "~> 1.0"},
       {:distillery, "~> 0.9"},
+      {:poison, "~> 2.2"},
+      {:csv, "~> 1.4"},
+      {:earmark, "~> 1.0"},
     ]
   end
 

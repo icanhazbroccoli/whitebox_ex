@@ -14,7 +14,7 @@ use Mix.Config
 config :whitebox, Whitebox.Endpoint,
                    http: [port: {:system, "PORT"}],
                   #http: [port: 8080],
-                    url: [host: "127.0.0.1", port: 8080],
+                    url: [host: "whitebox.io", port: 8080],
   cache_static_manifest: "priv/static/manifest.json",
                  server: true
 
