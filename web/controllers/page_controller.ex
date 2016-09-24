@@ -13,8 +13,9 @@ defmodule Whitebox.PageController do
       posts: posts
   end
 
-  def post(conn, params) do
-    # post= Post.
+  def post(conn, params= %{"slug" => slug}) do
+    post= Post.by_slug(slug)
+    render conn, "post.html", post: post
   end
 
 end

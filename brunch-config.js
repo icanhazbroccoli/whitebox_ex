@@ -2,7 +2,11 @@ exports.config = {
   // See http://brunch.io/#documentation for docs.
   files: {
     javascripts: {
-      joinTo: "js/app.js"
+      // joinTo: {
+      //   "js/app.js": /(web\/static\/js\/app)/,
+      //   "js/hljs.js": /(node_modules\/highlight.js\/lib)/
+      // },
+      joinTo: "js/app.js",
 
       // To use a separate vendor.js bundle, specify two files path
       // https://github.com/brunch/brunch/blob/stable/docs/config.md#files
@@ -23,7 +27,7 @@ exports.config = {
     stylesheets: {
       joinTo: {
         "css/app.css": /(web\/static\/css\/app*.css)/,
-        "css/style.css": /(web\/static\/css\/style\.css)/
+        "css/style.css": /(web\/static\/css\/style\.css)|(node_modules\/highlight\.js\/styles\/atom\-one\-dark)/
       }
     },
     templates: {
@@ -45,7 +49,8 @@ exports.config = {
       "deps/phoenix/web/static",
       "deps/phoenix_html/web/static",
       "web/static",
-      "test/static"
+      "test/static",
+      "node_modules/highlight.js/styles"
     ],
 
     // Where to compile files to

@@ -1,6 +1,8 @@
 <%= for post <- @posts do %>
   <div id="about" class="white_font content first">
-    <h2 class="fadeable"><a href="#"><%= post.title %></a></h2>
+    <h2 class="fadeable">
+      <a href="<%= page_path(@conn, :post, post.slug) %>"><%= post.title %></a>
+    </h2>
     <div class="content-box fadeable">
       <p class='first'>
         <%= Whitebox.Post.cut(post.body) |> Earmark.to_html |> raw %>

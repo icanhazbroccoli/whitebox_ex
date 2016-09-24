@@ -1,0 +1,6 @@
+<div class="post content">
+  <h2><%= @post.title %></h2>
+  <div class="post-body">
+    <%= @post.body |> Earmark.to_html |> raw %>
+  </div>
+</div>

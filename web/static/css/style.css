@@ -245,3 +245,8 @@ ul.links li {
 .white {
   background: #FFF;
 }
+
+.post {
+  background-color: #EEE;
+  margin-top: 0;
+}

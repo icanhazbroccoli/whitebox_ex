@@ -13,23 +13,21 @@
 
   <body>
     <div id='page'>
-      <header class="header">
+      <header class="header fadeable">
         <div id='letters' class='letters'>
-          <span class='light'>W</span>
-          <span class='light'>h</span>
-          <span class='light'>i</span>
-          <span class='light'>t</span>
-          <span class='light'>e</span>
-          <span class='light'>b</span>
-          <span class='light'>o</span>
-          <span class='light'>x</span>
-          <span class='light'>.</span>
-          <span class='light'>i</span>
-          <span class='light'>o</span>
-          <!--<div class='descr white_font'>
-            Smart software.
-          </div>
-          -->
+          <a href="<%= page_path(@conn, :index) %>">
+            <span class='light'>W</span>
+            <span class='light'>h</span>
+            <span class='light'>i</span>
+            <span class='light'>t</span>
+            <span class='light'>e</span>
+            <span class='light'>b</span>
+            <span class='light'>o</span>
+            <span class='light'>x</span>
+            <span class='light'>.</span>
+            <span class='light'>i</span>
+            <span class='light'>o</span>
+          </a>
         </div>
         <div class='links-holder'>
           <div class='left-bottom-corner white_font'>
