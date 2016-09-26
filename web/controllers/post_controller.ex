@@ -4,7 +4,7 @@ defmodule Whitebox.PostController do
   alias Whitebox.Post
 
   def index(conn, _params) do
-    posts = Repo.all(Post)
+    posts = Repo.all(from Post, order_by: [desc: :inserted_at])
     render(conn, "index.html", posts: posts)
   end
 
@@ -44,8 +44,8 @@ defmodule Whitebox.PostController do
     case Repo.update(changeset) do
       {:ok, post} ->
         conn
-        |> put_flash(:info, "Post updated successfully.")
-        |> redirect(to: post_path(conn, :show, post))
+          |> put_flash(:info, "Post updated successfully.")
+          |> redirect(to: post_path(conn, :index))
       {:error, changeset} ->
         render(conn, "edit.html", post: post, changeset: changeset)
     end

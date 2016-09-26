@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -33,6 +33,7 @@
           <div class='left-bottom-corner white_font'>
             <div class="corner"></div>
           </div>
+          <!--
           <nav role="navigation">
             <ul class="links fadeable">
               <li><a href="#about">About</a></li>
@@ -42,6 +43,7 @@
               <li><a href="#contacts">Contacts</a></li>
             </ul>
           </nav>
+          -->
           <div class="clear_both"></div>
         </div>
       </header>

@@ -8,7 +8,7 @@
         <%= Whitebox.Post.cut(post.body) |> Earmark.to_html |> raw %>
       </p>
       <p>
-        <a href="#">...</a>
+        <a href="<%= page_path(@conn, :post, post.slug) %>">...</a>
       </p>
     </div>
   </div>

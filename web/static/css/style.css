@@ -250,3 +250,12 @@ ul.links li {
   background-color: #EEE;
   margin-top: 0;
 }
+
+.post h2 {
+  margin-bottom: 20px;
+  border-bottom: 1px dotted;
+}
+
+.post p {
+  margin: 10px 0;
+}

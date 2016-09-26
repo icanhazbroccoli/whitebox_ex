@@ -3,9 +3,9 @@
 <table class="table">
   <thead>
     <tr>
+      <th>Published at</th>
       <th>Title</th>
       <th>Slug</th>
-      <th>Body</th>
       <th>Published</th>
 
       <th></th>
@@ -14,9 +14,9 @@
   <tbody>
 <%= for post <- @posts do %>
     <tr>
+      <td><%= post.inserted_at %></td>
       <td><%= post.title %></td>
       <td><%= post.slug %></td>
-      <td><%= a_few_words(post.body) %>...</td>
       <td><%= post.published %></td>
 
       <td class="text-right">

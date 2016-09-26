@@ -19,7 +19,7 @@ defmodule Whitebox.Mixfile do
   def application do
     [mod: {Whitebox, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :mariaex, :scrivener_ecto]]
+                    :phoenix_ecto, :mariaex, :scrivener_ecto, :comeonin]]
   end
 
   # Specifies which paths to compile per environment.
@@ -43,6 +43,7 @@ defmodule Whitebox.Mixfile do
       {:poison, "~> 2.2"},
       {:csv, "~> 1.4"},
       {:earmark, "~> 1.0"},
+      {:comeonin, "~>2.5.3"},
     ]
   end
 
