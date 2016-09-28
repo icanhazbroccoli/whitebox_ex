@@ -26,6 +26,7 @@ defmodule Whitebox.Router do
   scope "/edit", Whitebox do
     pipe_through [:browser, :editor]
     resources "/posts", PostController
+    resources "/users", UserController
   end
 
   # Other scopes may use custom stacks.
